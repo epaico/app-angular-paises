@@ -1,0 +1,41 @@
+<div  *ngIf="loading" class="row text-center">
+  <div class="row">
+    <div class="fa-3x">
+      <i class="fa-solid fa-cog fa-spin"></i>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!loading" class="row justify-content-center mt-4">
+  <div class="col col-sm-12 col-md-6">
+    <div class="card">
+      <div class="card-header text-center">
+        <div class="card-title">
+          <h5>{{paisSeleccionado.name.common}}</h5>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="list-group-flush">
+          <li class="list-group-item">
+            <span><strong>Official</strong>:  {{paisSeleccionado.name.official}}</span>
+          </li>
+          <li class="list-group-item">
+            <span><strong>Capital</strong>: {{paisSeleccionado.capital[0]}}</span>
+          </li>
+          <li class="list-group-item">
+            <span><strong>Region</strong>:  {{paisSeleccionado.region}}</span>
+          </li>
+          <li class="list-group-item">
+            <span><strong>SubRegion</strong>:  {{paisSeleccionado.subregion}}</span>
+          </li>
+          <li class="list-group-item">
+            <span><strong>Area</strong>:  {{paisSeleccionado.area}}</span>
+          </li>
+          <li class="list-group-item">
+            <span><strong>Population</strong>:  {{paisSeleccionado.population}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

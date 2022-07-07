@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+.redimension {
+  max-width:50%;
+  max-height:50%;
+}

@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header text-center">
+    <img [src]="pais.flags.svg" class="card-img-top" class="redimension">
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title text-center">{{pais.name.common}}</h5>
+    <div class="text-center">
+      <span class="badge bg-info text-dark">{{pais.capital[0]}}</span>
+    </div>
+    <div class="d-grid gap-2 mt-4">
+      <button (click)="verPais(pais.name.common)" class="btn btn-outline-info">Ver...</button>
+    </div>
+  </div>
+</div>
+
