@@ -1,12 +1,7 @@
-export class Pais {
+export interface Pais {
   name:string
-  common: string
-
-  constructor(name:string,common: string) {
-    this.name = name
-    this.common=common
-  }
-
+  capital: string
+  flag: string
 }
 
 

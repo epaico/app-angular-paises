@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PaisService} from "../../services/pais.service";
+import {Pais} from "../../models/pais";
 
 @Component({
   selector: 'app-home',
@@ -8,17 +9,18 @@ import {PaisService} from "../../services/pais.service";
 })
 export class HomeComponent implements OnInit {
 
-  paises: any[] = []
+  paises: Pais[] = []
 
   constructor(private service: PaisService) {
-      this.getPaises()
+    this.getPaises()
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
-  getPaises(){
+  getPaises() {
     this.service.getAllPaisesByRegion("americas")
-      .subscribe(res =>  this.paises = res);
+      .subscribe(res => this.paises = res);
   }
 
 }
