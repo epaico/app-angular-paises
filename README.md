@@ -1,3 +1,4 @@
+[![Deploy App](https://github.com/epaico/app-angular-paises/actions/workflows/pipeline.yaml/badge.svg)](https://github.com/epaico/app-angular-paises/actions/workflows/pipeline.yaml)
 # AppPaises
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
